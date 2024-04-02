@@ -1,27 +1,53 @@
 {
-  "name": "crypto-charts",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@dmytrodzharty/crypto-charts",
+  "version": "0.1.2",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.2",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "next": "14.1.4",
+    "qs": "^6.12.0",
     "react": "^18",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "react-use-websocket": "^4.8.1",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20",
+    "@types/qs": "^6.9.14",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint-config-next": "14.1.4",
+    "jest": "^29.7.0",
+    "jest-canvas-mock": "^2.5.2",
+    "jest-environment-jsdom": "^29.7.0",
+    "postcss": "^8",
+    "resize-observer-polyfill": "^1.5.1",
+    "tailwindcss": "^3.3.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5"
+  },
+  "description": "This is a test app for test task",
+  "main": "dist/index.js",
+  "author": "dzhartyds",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
