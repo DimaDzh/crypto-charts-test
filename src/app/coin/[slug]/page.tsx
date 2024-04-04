@@ -5,6 +5,7 @@ import FinancialChart from "@/app/components/FinancialChart";
 import Loader from "@/app/components/common/Loader";
 import FailedAlert from "@/app/components/common/FailedAlert";
 import { useCoinData } from "@/app/hooks/useCoinsData";
+import FinChartOnline from "@/app/components/FinChartOnline";
 
 const CoinPage: FC<{ params: { slug: string } }> = ({ params }) => {
   const slug = params.slug;
@@ -52,8 +53,12 @@ const CoinPage: FC<{ params: { slug: string } }> = ({ params }) => {
         </button>
       </div>
 
-      <div className="w-full h-[500px] container">
+      <div className="w-full h-[500px] my-5 container">
         <FinancialChart data={currencies} interval={interval} />
+      </div>
+
+      <div className="w-full h-[500px] my-5 container">
+        <FinChartOnline symbol={slug} />
       </div>
     </section>
   );

@@ -1,4 +1,6 @@
 import TrendingCoinsList from "./components/CoinsList";
+import FinChartOnline from "./components/FinChartOnline";
+import { fetchWsBinance } from "./utils/getOnlineData";
 
 async function getCoinList(): Promise<any> {
   try {
@@ -14,6 +16,8 @@ async function getCoinList(): Promise<any> {
 
 export default async function Home() {
   const coinList = await getCoinList();
+  const somtest = fetchWsBinance("BTCUSDT", "1d");
+
   return (
     <div className="flex flex-col justify-center items-center py-12">
       <h1 className="text-3xl font-bold mb-6">Crypto Price History</h1>
