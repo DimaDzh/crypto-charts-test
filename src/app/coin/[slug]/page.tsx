@@ -21,7 +21,10 @@ const CoinPage: FC<{ params: { slug: string } }> = ({ params }) => {
   }
 
   return (
-    <section className="container flex flex-col py-4 md:py-8 lg:py-12 ">
+    <section
+      data-testid="coin-page-main-section"
+      className="container flex flex-col py-4 md:py-8 lg:py-12"
+    >
       <Link
         href={"/"}
         className="rounded bg-indigo-500 px-2 py-1 w-fit text-xs font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"

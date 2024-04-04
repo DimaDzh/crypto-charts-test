@@ -9,23 +9,9 @@ export const signalsData = ({
   sellIndex1 = 20,
   sellIndex2 = 76,
 }: SignalFunctionDataType) => {
-  const dataLength = filteredData.length;
-
-  if (
-    buyIndex1 >= dataLength ||
-    buyIndex2 >= dataLength ||
-    sellIndex1 >= dataLength ||
-    sellIndex2 >= dataLength
-  ) {
-    console.error(
-      "Invalid signal indexes. Please provide indexes within the filtered data range."
-    );
-    return [];
-  }
-
   const buy1 = {
-    x: filteredData[buyIndex1].x.getTime(),
-    y: filteredData[buyIndex1].y[2],
+    x: filteredData[buyIndex1]?.x.getTime(),
+    y: filteredData[buyIndex1]?.y[2],
     label: {
       text: "Buy",
       borderColor: "transparent",
@@ -46,8 +32,8 @@ export const signalsData = ({
   };
 
   const buy2 = {
-    x: filteredData[buyIndex2].x.getTime(),
-    y: filteredData[buyIndex2].y[2],
+    x: filteredData[buyIndex2]?.x.getTime(),
+    y: filteredData[buyIndex2]?.y[2],
     label: {
       text: "Buy",
       borderColor: "transparent",
@@ -68,8 +54,8 @@ export const signalsData = ({
   };
 
   const sell1 = {
-    x: filteredData[sellIndex1].x.getTime(),
-    y: filteredData[sellIndex1].y[2],
+    x: filteredData[sellIndex1]?.x.getTime(),
+    y: filteredData[sellIndex1]?.y[2],
     label: {
       text: "Sell",
       borderColor: "transparent",
@@ -90,8 +76,8 @@ export const signalsData = ({
   };
 
   const sell2 = {
-    x: filteredData[sellIndex2].x.getTime(),
-    y: filteredData[sellIndex2].y[sellIndex2],
+    x: filteredData[sellIndex2]?.x.getTime(),
+    y: filteredData[sellIndex2]?.y[sellIndex2],
     label: {
       text: "Sell",
       borderColor: "transparent",

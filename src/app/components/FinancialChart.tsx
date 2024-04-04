@@ -7,12 +7,17 @@ import chartLineIcon from "./assets/line-chart-svgrepo-com.svg";
 import barChartIcon from "./assets/bar-chart-svgrepo-com.svg";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import Loader from "./common/Loader";
+
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const FinancialChart = ({ data, interval = "1d" }: FinancialChartProps) => {
   const [chartType, setChartType] = useState<"line" | "candlestick">(
     "candlestick"
   );
+  if (!data) {
+    return <Loader />;
+  }
 
   const toggleChartType = (type: "line" | "candlestick") => {
     setChartType(type);
@@ -55,7 +60,7 @@ const FinancialChart = ({ data, interval = "1d" }: FinancialChartProps) => {
       <div className="flex justify-center">
         <button
           data-testid="line-chart-button"
-          className={`mx-2 p-2 rounded border ${
+          className={`mx-2 p-2  rounded border ${
             chartType === "line" ? "bg-gray-200" : "bg-white"
           }`}
           onClick={() => toggleChartType("line")}
@@ -68,7 +73,7 @@ const FinancialChart = ({ data, interval = "1d" }: FinancialChartProps) => {
           />
         </button>
         <button
-          data-testid="bar-chart-button"
+          data-testid="candlestick-chart-button"
           className={`mx-2 p-2 rounded border ${
             chartType === "candlestick" ? "bg-gray-200" : "bg-white"
           }`}
