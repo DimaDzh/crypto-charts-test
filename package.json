@@ -1,6 +1,6 @@
 {
   "name": "@dmytrodzharty/crypto-charts",
-  "version": "0.1.2",
+  "version": "1.1.4",
   "private": false,
   "scripts": {
     "dev": "next dev",
@@ -10,16 +10,21 @@
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaDzh/crypto-charts-test.git"
+  },
   "dependencies": {
+    "apexcharts": "^3.48.0",
     "axios": "^1.6.8",
-    "chart.js": "^4.4.2",
-    "chartjs-adapter-date-fns": "^3.0.0",
+    "binance-api-node": "^0.12.7",
+    "dayjs": "^1.11.10",
+    "events": "^3.3.0",
     "next": "14.1.4",
     "qs": "^6.12.0",
     "react": "^18",
-    "react-chartjs-2": "^5.2.0",
+    "react-apexcharts": "^1.4.1",
     "react-dom": "^18",
-    "react-use-websocket": "^4.8.1",
     "swr": "^2.2.5"
   },
   "devDependencies": {
@@ -40,14 +45,23 @@
     "resize-observer-polyfill": "^1.5.1",
     "tailwindcss": "^3.3.0",
     "ts-jest": "^29.1.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   },
   "description": "This is a test app for test task",
+  "source": "src/app/page.tsx",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "author": "dzhartyds",
   "license": "ISC",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/DimaDzh/crypto-charts-test.git#readme",
+  "bugs": {
+    "url": "https://github.com/DimaDzh/crypto-charts-test/issues"
   }
 }

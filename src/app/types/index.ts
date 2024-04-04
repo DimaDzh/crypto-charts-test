@@ -1,19 +1,3 @@
-export interface Signal {
-  timestamp: number;
-  price: number;
-  volume: number;
-}
-
-export interface CoinChartProps {
-  data: CoinChartData;
-  interval: "24h" | "7d" | "30d";
-  coinName: string;
-}
-
-export interface CoinDeatilsProps {
-  coinName: string;
-}
-
 export interface CoinChartData {
   change: string;
   history: { price: string; timestamp: number }[];
@@ -22,19 +6,20 @@ export interface CoinChartData {
 export type TrendingCoinsListData = {
   data: {
     data: {
-      coins:
-        | {
-            uuid: string;
-            symbol: string;
-            name: string;
-            price: string;
-            change: string;
-            iconUrl: string;
-            marketCap: string;
-            coinrankingUrl: string;
-          }[];
+      coins: TrendingCoinsData[];
     } | null;
   };
+};
+
+type TrendingCoinsData = {
+  uuid: string;
+  symbol: string;
+  name: string;
+  price: string;
+  change: string;
+  iconUrl: string;
+  marketCap: string;
+  coinrankingUrl: string;
 };
 
 export interface CoinHistoryData {
@@ -60,3 +45,20 @@ export interface CoinDetailsData {
     websiteUrl: string;
   };
 }
+
+export type Intervals = "1d" | "7d" | "30d";
+
+export type FinancialChartProps = {
+  data: CurrenciesData;
+  interval: Intervals;
+};
+
+export type CurrenciesData = { x: Date; y: Number[] }[] | [];
+
+export type SignalFunctionDataType = {
+  buyIndex1?: number;
+  buyIndex2?: number;
+  sellIndex1?: number;
+  sellIndex2?: number;
+  filteredData: any[];
+};

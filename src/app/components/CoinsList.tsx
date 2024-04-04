@@ -17,7 +17,7 @@ const TrendingCoinsList: FC<TrendingCoinsListData> = ({ data }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-5 lg:gap-8">
         {coins &&
           coins.map((coin) => (
-            <Link href={`/coin/${coin.uuid}`} key={coin.uuid}>
+            <Link href={`/coin/${coin.symbol}`} key={coin.uuid}>
               <div className="flex items-center flex-col justify-center p-4 gap-2 border border-blue-400 bg-slate-100 shadow-md hover:bg-blue-300 rounded-md cursor-pointer transition-colors ease-in">
                 <Image
                   src={coin.iconUrl}

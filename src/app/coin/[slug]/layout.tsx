@@ -16,7 +16,7 @@ export async function generateMetadata(params: {
 
   return {
     title: coinName ? `${coinName} - Coin` : "Coin Details",
-    description: coinDescription,
+    description: coinDescription ? coinDescription : "Coin description",
   };
 }
 

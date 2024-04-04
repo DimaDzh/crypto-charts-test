@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Coin charts",
-  description: "Coin charts with coinranking api",
+  description: "Coin charts with coinranking api and binance-node-api",
 };
 
 export default function RootLayout({
