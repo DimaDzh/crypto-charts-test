@@ -28,3 +28,36 @@
 - Бібліотеки: React-apexcharts, Swr;
 
 ## GitHub: [URL GitHub](https://github.com/DimaDzh/crypto-charts-test)
+
+## Web application for monitoring cryptocurrencies
+
+This web application uses the Coinranking API to retrieve data about cryptocurrencies and display them on the page in the form of cards. Each card contains basic information about the coin, such as
+
+- Coin name
+- Symbol
+- Current last price
+- Market capitalization.
+
+# Functional features:
+
+View coin cards: The app downloads data about 10 coins from Coinranking with the largest capitalization and displays them on the page.
+
+For detailed information, you can use the Binance API (binance-api-node): When clicking on a coin card, the user is redirected to a new page that displays detailed information about that coin, including:
+
+- Historical price against USDT (for 1 day, 1 Sunday, 1 month from the current date)
+- There are buttons for switching the type of graphs: line or candlestick
+- The historical price chart displays random signals: 2 buy signals - an upward arrow, and 2 sell signals - a downward arrow
+- Online price against USDT from the Binance web-socket
+
+## Technology:
+
+- Web framework: NextJS
+- Programming language: typescrip
+- Styling: TailwindCSS
+- Testing: Jest
+- API: Coinranking, Binance
+- Libraries: React-apexcharts, Swr;
+
+## GitHub: [GitHub URL](https://github.com/DimaDzh/crypto-charts-test)
+
+Translated with www.DeepL.com/Translator (free version)
