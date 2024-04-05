@@ -29,9 +29,21 @@
 
 ## GitHub: [URL GitHub](https://github.com/DimaDzh/crypto-charts-test)
 
-![Домашня сторінка](/public/coinpage1.png)
-![Сторінка монети графік історичної ціни ](/public/coinpage1.png)
+# Домашня сторінка
+
+![Домашня сторінка](/public/home-page1.png)
+
+# Сторінка монети графік історичної ціни
+
+![Сторінка монети графік історичної ціни](/public/coinpage1.png)
+
+# Сторінка монети графік ціни в реальному часі
+
 ![Сторінка монети графік ціни в реальному часі](/public/coinpage2.png)
+
+# Сторінка обробки помилки якщо немає данних про співвідношення ціни монети до USDT
+
+![Сторінка монети графік ціни в реальному часі](/public/error-page.png)
 
 ## Web application for monitoring cryptocurrencies
 
@@ -63,3 +75,19 @@ For detailed information, you can use the Binance API (binance-api-node): When c
 - Libraries: React-apexcharts, Swr;
 
 ## GitHub: [GitHub URL](https://github.com/DimaDzh/crypto-charts-test)
+
+# Home page
+
+![Home page](/public/home-page1.png)
+
+# Coin page historical price chart
+
+![Coin page historical price chart](/public/coinpage1.png)
+
+# Coin page price chart in real time
+
+![Coin page with real-time price chart](/public/coinpage2.png)
+
+# Error handling page if there is no data on the ratio of the coin price to USDT
+
+![Coin page with real-time price chart](/public/error-page.png)
