@@ -49,8 +49,8 @@ const FinancialChart: FC<FinancialChartData> = ({ symbol }) => {
       type: "datetime",
     },
     yaxis: {
-      tooltip: {
-        formatter: (val: any) => `$${val}`,
+      labels: {
+        formatter: (val: number): string | string[] => `$${val}`,
       },
     },
   };
@@ -70,7 +70,7 @@ const FinancialChart: FC<FinancialChartData> = ({ symbol }) => {
       <ApexChart
         options={chartOptions}
         series={series}
-        type="line"
+        type="candlestick"
         width={"100%"}
         height={"500px"}
       />
