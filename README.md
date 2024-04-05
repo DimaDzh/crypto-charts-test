@@ -29,6 +29,10 @@
 
 ## GitHub: [URL GitHub](https://github.com/DimaDzh/crypto-charts-test)
 
+![Домашня сторінка](/public/coinpage1.png)
+![Сторінка монети графік історичної ціни ](/public/coinpage1.png)
+![Сторінка монети графік ціни в реальному часі](/public/coinpage2.png)
+
 ## Web application for monitoring cryptocurrencies
 
 This web application uses the Coinranking API to retrieve data about cryptocurrencies and display them on the page in the form of cards. Each card contains basic information about the coin, such as
@@ -59,5 +63,3 @@ For detailed information, you can use the Binance API (binance-api-node): When c
 - Libraries: React-apexcharts, Swr;
 
 ## GitHub: [GitHub URL](https://github.com/DimaDzh/crypto-charts-test)
-
-Translated with www.DeepL.com/Translator (free version)
