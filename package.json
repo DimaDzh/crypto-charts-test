@@ -15,8 +15,8 @@
     "url": "git+https://github.com/DimaDzh/crypto-charts-test.git"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "apexcharts": "^3.48.0",
-    "axios": "^1.6.8",
     "binance-api-node": "^0.12.7",
     "dayjs": "^1.11.10",
     "events": "^3.3.0",
