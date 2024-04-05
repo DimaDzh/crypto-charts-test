@@ -29,6 +29,10 @@
 
 ## GitHub: [URL GitHub](https://github.com/DimaDzh/crypto-charts-test)
 
+## Deploy on Vercel: [Deploy on Vercel](https://crypto-charts-test.vercel.app)
+
+## Npm package : npm i @dmytrodzharty/crypto-charts
+
 # Домашня сторінка
 
 ![Домашня сторінка](/public/home-page1.png)
@@ -75,6 +79,10 @@ For detailed information, you can use the Binance API (binance-api-node): When c
 - Libraries: React-apexcharts, Swr;
 
 ## GitHub: [GitHub URL](https://github.com/DimaDzh/crypto-charts-test)
+
+## Deploy on Vercel: [Deploy on Vercel](https://crypto-charts-test.vercel.app)
+
+## Npm package : npm i @dmytrodzharty/crypto-charts
 
 # Home page
 
