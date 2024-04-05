@@ -21,7 +21,7 @@
 ## Технології:
 
 - Веб-фреймворк: NextJS
-- Мова програмування: typescrip
+- Мова програмування: typescript
 - Cтилізація: TailwindCSS
 - Тестування: Jest
 - API: Сoinranking, Binance
@@ -72,7 +72,7 @@ For detailed information, you can use the Binance API (binance-api-node): When c
 ## Technology:
 
 - Web framework: NextJS
-- Programming language: typescrip
+- Programming language: typescript
 - Styling: TailwindCSS
 - Testing: Jest
 - API: Coinranking, Binance

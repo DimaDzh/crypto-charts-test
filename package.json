@@ -1,6 +1,6 @@
 {
   "name": "@dmytrodzharty/crypto-charts",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "private": false,
   "scripts": {
     "dev": "next dev",
@@ -60,7 +60,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "homepage": "https://github.com/DimaDzh/crypto-charts-test.git#readme",
+  "homepage": "https://crypto-charts-test.vercel.app",
   "bugs": {
     "url": "https://github.com/DimaDzh/crypto-charts-test/issues"
   }
