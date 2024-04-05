@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Веб-додаток для моніторингу криптовалют
 
-## Getting Started
+Цей веб-додаток використовує API Сoinranking для отримання даних про криптовалюти та відображення їх на сторінці у вигляді карток. Кожна картка містить основну інформацію про монету, таку як:
 
-First, run the development server:
+- Назва монети
+- Символ
+- Поточна остання ціна
+- Ринкова капіталізація
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Функціональні можливості:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Перегляд карток монет: Додаток завантажує дані про 10 монет з Сoinranking з найбільшою капіталізацією та відображає їх на сторінці.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Для детальної інформації викроистовується про монету API Binance (binance-api-node) : При натисканні на картку монети користувач перенаправляється на нову сторінку, де відображається детальна інформація про цю монету, включаючи:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Історичну ціну відносно до USDT (за 1 день, 1 неділю, 1 місяць від поточної дати)
+- Є кнопки перемикання виду графіків лінийни(line) чи свічник(candlestick)
+- На графіку історичної ціни виводиться рандомні сигнали 2 покупки (buy) - стрілка вверї, та 2 продажу(sell) - стрілка донизу
+- Онлайн ціну відносно до USDT з вебсокету Binance
 
-## Learn More
+## Технології:
 
-To learn more about Next.js, take a look at the following resources:
+- Веб-фреймворк: NextJS
+- Мова програмування: typescrip
+- Cтилізація: TailwindCSS
+- Тестування: Jest
+- API: Сoinranking, Binance
+- Бібліотеки: React-apexcharts, Swr;
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## GitHub: [URL GitHub](https://github.com/DimaDzh/crypto-charts-test)
